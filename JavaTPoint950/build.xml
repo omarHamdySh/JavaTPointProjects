@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="JavaTPoint950_-_JSP_PageContext" default="default" basedir=".">
-    <description>Builds, tests, and runs the project JavaTPoint950 - JSP PageContext.</description>
+<project name="JavaTPoint950" default="default" basedir=".">
+    <description>Builds, tests, and runs the project JavaTPoint950.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
