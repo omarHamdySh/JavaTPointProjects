@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Insert title here</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        <h1>Add New Employee</h1>
+        <form action="SaveServlet" method="post" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name" >Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" name="name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="password" >password:</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="password" >Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" name="email"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="password" >Country:</label>
+                <select name="country" style="width:150px" class="form-control" >
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group"> 
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" value="Save Employee" class="btn btn-default"/>
+                </div>
+            </div>
+        </form>
+
+        <br/>
+        <a href="ViewServlet" class="btn btn-info" role="button">view employees</a>
+
+        <div ><h3> If you finished please click finish button</h3>
+            <form action="FinishServlet" method="get" >
+                <input class="btn btn-info" role="button" type="submit" value="Finish" />
+            </form>
+        </div>
+    </body>
+</html>
