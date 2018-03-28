@@ -18,7 +18,7 @@ public class PassByValue {
         increase(c);
         System.out.println("'c' after 'increase(int)': " + c);
 
-        System.out.println();
+        System.out.println("fhfghgfhgghhgfhg");
 
         /**
          * As we said before, Java is always pass by value, but for object you
