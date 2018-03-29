@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>JSP1-Import</servlet-name>
+        <jsp-file>/JSP1-Import.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP2-ContentType</servlet-name>
+        <jsp-file>/JSP2-ContentType.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP2-ContentTypePlainTxt</servlet-name>
+        <jsp-file>/JSP2-ContentTypePlainTxt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JSP1-Import</servlet-name>
+        <url-pattern>/JSP1-Import.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP2-ContentType</servlet-name>
+        <url-pattern>/JSP2-ContentType.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP2-ContentTypePlainTxt</servlet-name>
+        <url-pattern>/JSP2-ContentTypePlainTxt.jsp</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
