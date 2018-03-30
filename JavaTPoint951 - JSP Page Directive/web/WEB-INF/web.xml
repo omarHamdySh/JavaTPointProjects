@@ -12,6 +12,10 @@
         <servlet-name>JSP2-ContentTypePlainTxt</servlet-name>
         <jsp-file>/JSP2-ContentTypePlainTxt.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>JSP4-info</servlet-name>
+        <jsp-file>/JSP4-info.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>JSP1-Import</servlet-name>
         <url-pattern>/JSP1-Import.jsp</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>JSP2-ContentTypePlainTxt</servlet-name>
         <url-pattern>/JSP2-ContentTypePlainTxt.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP4-info</servlet-name>
+        <url-pattern>/JSP4-info.jsp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
