@@ -4,7 +4,7 @@
     Author     : omarhamdy
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" info="Created By Omar Hamdy"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1><%=getServletInfo()%></h1>
     </body>
 </html>
