@@ -4,7 +4,7 @@
     Author     : omarhamdy
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" buffer="16kb"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>5th JSP Directive "Buffer" 
+            </br>here we determined the page buffer size as a 16kb
+            </br>The default page buffer size is 8kb the same as the servlet buffer size
+        </h1>
     </body>
 </html>

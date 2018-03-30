@@ -16,6 +16,30 @@
         <servlet-name>JSP4-info</servlet-name>
         <jsp-file>/JSP4-info.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>JSP5-Buffer</servlet-name>
+        <jsp-file>/JSP5-Buffer.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP6-Language</servlet-name>
+        <jsp-file>/JSP6-Language.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP7-isELIgnored</servlet-name>
+        <jsp-file>/JSP7-isELIgnored.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP8-isThreadSafe</servlet-name>
+        <jsp-file>/JSP8-isThreadSafe.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP9-errorPage</servlet-name>
+        <jsp-file>/JSP9-errorPage.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>JSP910-isErrorPage</servlet-name>
+        <jsp-file>/JSP910-isErrorPage.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>JSP1-Import</servlet-name>
         <url-pattern>/JSP1-Import.jsp</url-pattern>
@@ -31,6 +55,30 @@
     <servlet-mapping>
         <servlet-name>JSP4-info</servlet-name>
         <url-pattern>/JSP4-info.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP5-Buffer</servlet-name>
+        <url-pattern>/JSP5-Buffer.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP6-Language</servlet-name>
+        <url-pattern>/JSP6-Language.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP7-isELIgnored</servlet-name>
+        <url-pattern>/JSP7-isELIgnored.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP8-isThreadSafe</servlet-name>
+        <url-pattern>/JSP8-isThreadSafe.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP9-errorPage</servlet-name>
+        <url-pattern>/JSP9-errorPage.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSP910-isErrorPage</servlet-name>
+        <url-pattern>/JSP910-isErrorPage.jsp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

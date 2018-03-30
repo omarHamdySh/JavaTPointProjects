@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1><%=getServletInfo()%></h1>
+        <h1>Third JSP Directive "info": </br> 
+            will use the getServletInfo() method to get JSP "after compiling:servlet" info:</h1>
+        <h2><%=getServletInfo()%></h2>
     </body>
 </html>

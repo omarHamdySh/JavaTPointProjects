@@ -4,7 +4,7 @@
     Author     : omarhamdy
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>The 10th JSP page directive "isErrorPage"</h1>
+        <h2>The isErrorPage attribute is used to declare that the current page is the error page.
+        </h2>
+        <h3>The Exception is:<%=exception%></h3>
+        
     </body>
 </html>
