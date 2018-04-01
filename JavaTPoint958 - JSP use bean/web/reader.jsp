@@ -12,9 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:useBean id="emp1" class="Employee">
-       <h1> <jsp:getProperty name="emp1" property="name"/>
-        </h1>
+        <jsp:useBean id="emp1" class="Beans.Employee">
+            <% String name=emp1.getName(); out.println(name);%>
         </jsp:useBean>
     </body>
 </html>

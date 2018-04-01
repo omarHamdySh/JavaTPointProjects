@@ -1,3 +1,5 @@
+package Beans;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,9 +12,9 @@
  */
 public class Employee implements java.io.Serializable {
 
-    private int id=1;
+    private int id;
     
-    private String name="Omar";
+    private String name="Omar Hamdy";
 
     public Employee() {
     }
