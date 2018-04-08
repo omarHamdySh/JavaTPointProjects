@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    body{
+        margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="home.jsp">Home</a></li>
+        <li><a href="fmtparseNumber.jsp">fmt:parseNumber</a></li>
+        <li><a href="fmttimeZone.jsp">fmt:timeZone</a></li>
+        <li><a href="fmtformatNumber.jsp">fmt:formatNumber</a></li>
+        <li><a href="fmtparseDate.jsp">fmt:parseDate</a></li>
+        <li><a href="fmtbundle.jsp">fmt:bundle</a></li>
+        <li><a href="fmtsetTimeZone.jsp">fmt:setTimeZone</a></li>
+        <li><a href="fmtsetBundle.jsp">fmt:setBundle</a></li>
+        <li><a href="fmtFormatDate.jsp">fmtFormatDate</a></li>
+    </ul>

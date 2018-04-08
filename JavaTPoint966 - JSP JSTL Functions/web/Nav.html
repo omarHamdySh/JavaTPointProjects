@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    body{
+        margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="home.jsp">Home</a></li>
+        <li><a href="fncontains.jsp">fn:contains(str,str)</a></li>
+        <li><a href="fncontainsignore.jsp">fn:containsIgnoreCase(str,str)</a></li>
+        <li><a href="fnendswith.jsp">fn:endsWith(str,str)</a></li>
+        <li><a href="fnescapeXml.jsp">fn:escapeXml(str)</a></li>
+        <li><a href="fnindexOf.jsp">fn:indexOf(str,str)</a></li>
+        <li><a href="fntrim.jsp">fn:trim(str)</a></li>
+        <li><a href="fnstartsWith.jsp">fn:startsWith(str,str)</a></li>
+        <li><a href="fnsplit.jsp">fn:split(str)</a></li>
+        <li><a href="fntolowercase.jsp">fn:tolowercase(str)</a></li>
+        <li><a href="fntoUpperCase.jsp">fn:toUpperCase(str)</a></li>
+        <li><a href="fnsubstring.jsp">fn:substring(str,int,int)</a></li>
+        <li><a href="fnsubstringAfter.jsp">fn:substringAfter(str,str)</a></li>
+        <li><a href="fnsubstringBefore.jsp">fn:substringBefore(str,str)</a></li>
+        <li><a href="fnreplace.jsp">fn:replace(str,str,str)</a></li>
+
+    </ul>
