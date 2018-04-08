@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    body{
+        margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="home.jsp">Home</a></li>
+        <li><a href="sqlsetDataSource.jsp">sql:setDataSource</a></li>
+        <li><a href="sqlquery.jsp">sql:query</a></li>
+        <li><a href="sqlupdate.jsp">sql:update</a></li>
+        <li><a href="sqlparam.jsp">sql:param</a></li>
+        <li><a href="sqldateParam.jsp">sql:dateParam</a></li>
+        <li><a href="sqltransaction.jsp">sql:transaction</a></li>
+    </ul>
