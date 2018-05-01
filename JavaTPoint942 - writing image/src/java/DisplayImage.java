@@ -17,6 +17,8 @@ public class DisplayImage extends HttpServlet {
 
         //Encapsulate the ServletOutPutStream inside BufferedOutPutStream because its faster
         //to write.
+                //BufferedInputStream bin = new BufferedInputStream();
+
         BufferedOutputStream bout = new BufferedOutputStream(out);
 
         int ch = 0;
