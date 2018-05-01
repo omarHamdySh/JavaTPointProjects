@@ -38,15 +38,18 @@
 
         <%
             Employee employee = null;
-            String empType = (String)session.getAttribute("type");
+            String empType = (String) session.getAttribute("type");
             if (empType != null) {
                 if (empType.equals("reg")) {
                     employee = (Regular_Employee) session.getAttribute("reg_emp");
+                    session.setAttribute("reg_emp", null);
                 } else if (empType.equals("cont")) {
                     employee = (Contract_Employee) session.getAttribute("cont_emp");
+                    session.setAttribute("cont_emp", null);
                 }
             } else {
                 employee = (Employee) session.getAttribute("emp");
+                session.setAttribute("emp", null);
             }
             StoreData st = new StoreData(employee);
             st.save();
