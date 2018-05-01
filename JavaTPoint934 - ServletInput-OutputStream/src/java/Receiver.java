@@ -36,9 +36,9 @@ public class Receiver extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("image/jpeg");
-        ServletOutputStream out;
+        ServletOutputStream out = response.getOutputStream();
+
         ServletInputStream in=request.getInputStream();
-        out = response.getOutputStream();
         //FileInputStream img = new FileInputStream("/Users/omarhamdy/Desktop/aqsa.JPG");
         ByteArrayOutputStream bst=new ByteArrayOutputStream((Byte)request.getAttribute("image"));
         
