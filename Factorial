@@ -1,0 +1,90 @@
+/*
+ *Note: there are three method each implementing the factorial function differently.
+ */
+
+/**
+ *
+ * @author Omar Hamdy Shafik
+ */
+public class Factorial {
+
+    public static void main(String args[]) {
+        //The Max number to calculate the factorial of 20 for this method
+        getFactorialFiercely(20);
+        System.out.println("__________________");
+        //The Max number to calculate the factorial of 20 for this method
+        getFactorialSmartly(20);
+        System.out.println("__________________");
+        getFactorialOfBigNumbers(100);
+    }
+
+    static void getFactorialFiercely(int number) {
+        long factorialTemp = 1;
+        String factorialDisplayer = "Process of: 1";
+        int zerosCounter;
+        for (int i = 0; i < number - 1;) {
+            System.out.println("Factorial of " + number + " :");
+            for (int j = number; j > 1; j--) {
+                factorialDisplayer += (" * " + String.valueOf(j));
+                factorialTemp *= j;
+            }
+            System.out.println(factorialDisplayer + " = " + factorialTemp);
+            factorialTemp = 1;
+            factorialDisplayer = "Process Details: 1";
+            number--;
+        }
+
+    }
+
+    static void getFactorialSmartly(int number) {
+        long factorialTemp = 0;
+        long previousFactorial = 1;
+        String factorialDisplayer = "Process of:";
+        for (int i = 2; i < number + 1; i++) {
+            factorialDisplayer += (String.valueOf(i) + " * " + String.valueOf(previousFactorial));
+            factorialTemp = i * previousFactorial;
+            System.out.println("Factorial of (" + i + ") process details => " + i + " * " + previousFactorial + " = " + factorialTemp);
+            previousFactorial = factorialTemp;
+        }
+        //System.out.println(factorialDisplayer + " = " + factorialTemp);
+
+    }
+
+    static void getFactorialOfBigNumbers(int number) {
+        for (int j = number; j > 1; j--) {
+            System.out.println("The factorial of (" + j +"):");
+            int factorialRes[] = new int[500];
+            factorialRes[0] = 1;
+            int factResSize = 1;
+            for (int i = 2; i <= j; i++) {
+                factResSize = calculateFact(i, factorialRes, factResSize);
+            }
+            for (int i = factResSize - 1; i >= 0; i--) {
+                System.out.print(factorialRes[i]);
+            }
+            System.out.println("");
+        }
+
+    }
+
+    private static int calculateFact(int num, int[] factorialRes, int factResSize) {
+        int carry = 0;
+        for (int i = 0; i < factResSize; i++) {
+            int res = factorialRes[i] * num + carry;
+            factorialRes[i] = res % 10;
+            carry = res / 10;
+        }
+
+        while (carry != 0) {
+            factorialRes[factResSize] = carry % 10;
+            carry = carry / 10;
+            factResSize++;
+        }
+        return factResSize;
+    }
+}
+
+/**
+ * *
+ * Resources: How to calculate factorial for huge numbers: https://goo.gl/9nrtw5
+ */
