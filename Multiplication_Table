@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Omar
+ */
+public class Multiplication_Table {
+
+    public static void main(String args[]) {
+
+        for (int j = 1; j < 13; j++) {
+            for (int i = 1; i < 7; i++) {
+                System.out.print(i + " * " + j + " = " + i * j + "    ");
+            }
+            System.out.println("");
+        }
+        System.out.println("\n");
+
+        for (int j = 1; j < 13; j++) {
+            for (int i = 7; i < 13; i++) {
+                System.out.print(i + " * " + j + " = " + i * j + "    ");
+            }
+            System.out.println("");
+        }
+
+    }
+}
